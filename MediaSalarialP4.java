@@ -35,3 +35,5 @@ public class MediaSalarialP4 {
         System.out.println("Média salarial cidade é: " + mediaSalarial);
 
         scanner.close();
+    }
+}

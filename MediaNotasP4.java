@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class mediaNotasP4 {
+public class MediaNotasP4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

@@ -28,4 +28,4 @@ public class CalculoFatorialP6 {
             }
             return fatorial;
         }
-    }
+    }}

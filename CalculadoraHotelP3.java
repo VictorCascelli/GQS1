@@ -36,3 +36,4 @@ public class CalculadoraHotelP3 {
         }
 
         System.out.println("O total a ser pago é: " + totalPagar);
+    }}
