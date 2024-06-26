@@ -5,14 +5,14 @@ public class Matriz3Metodos {
         Scanner scanner = new Scanner(System.in);
         int[][] matriz = new int[5][5];
 
-        // Ler os elementos da matriz
+        
         lerMatriz(scanner, matriz);
 
-        // Imprimir a matriz informada
+        
         System.out.println("Matriz informada:");
         imprimirMatriz(matriz);
 
-        // Imprimir a matriz transposta
+        
         System.out.println("\nMatriz transposta:");
         int[][] transposta = calcularMatrizTransposta(matriz);
         imprimirMatriz(transposta);
@@ -20,7 +20,7 @@ public class Matriz3Metodos {
         scanner.close();
     }
 
-    // Método para ler os elementos da matriz
+   
     public static void lerMatriz(Scanner scanner, int[][] matriz) {
         System.out.println("Digite os elementos da matriz 5x5:");
         for (int i = 0; i < 5; i++) {
@@ -30,7 +30,7 @@ public class Matriz3Metodos {
         }
     }
 
-    // Método para imprimir a matriz
+   
     public static void imprimirMatriz(int[][] matriz) {
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
@@ -40,7 +40,7 @@ public class Matriz3Metodos {
         }
     }
 
-    // Método para calcular a matriz transposta
+
     public static int[][] calcularMatrizTransposta(int[][] matriz) {
         int[][] transposta = new int[5][5];
 
