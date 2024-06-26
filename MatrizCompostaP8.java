@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MatrizTranspostaP8 {
+public class MatrizCompostaP8 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int[][] matriz = new int[5][5];
