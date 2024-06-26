@@ -1,26 +1,28 @@
 import java.util.Scanner;
 
-public class Matriz3Metodos {
+public class MatrizMetodos4P9 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int[][] matriz = new int[5][5];
 
-        
+        // Ler os elementos da matriz
         lerMatriz(scanner, matriz);
 
-        
+        // Imprimir a matriz informada
         System.out.println("Matriz informada:");
         imprimirMatriz(matriz);
 
-        
-        System.out.println("\nMatriz transposta:");
-        int[][] transposta = calcularMatrizTransposta(matriz);
-        imprimirMatriz(transposta);
+        // Trocar os elementos da diagonal principal com os elementos da diagonal secundária
+        trocarDiagonais(matriz);
+
+        // Imprimir a matriz resultante
+        System.out.println("\nMatriz resultante:");
+        imprimirMatriz(matriz);
 
         scanner.close();
     }
 
-   
+    // Método para ler os elementos da matriz
     public static void lerMatriz(Scanner scanner, int[][] matriz) {
         System.out.println("Digite os elementos da matriz 5x5:");
         for (int i = 0; i < 5; i++) {
@@ -30,7 +32,7 @@ public class Matriz3Metodos {
         }
     }
 
-   
+    // Método para imprimir a matriz
     public static void imprimirMatriz(int[][] matriz) {
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
@@ -40,17 +42,12 @@ public class Matriz3Metodos {
         }
     }
 
-    public static int[][] calcularMatrizTransposta(int[][] matriz) {
-        int[][] transposta = new int[5][5];
-
+    // Método para trocar os elementos da diagonal principal com os elementos da diagonal secundária
+    public static void trocarDiagonais(int[][] matriz) {
         for (int i = 0; i < 5; i++) {
-            for (int j = 0; j < 5; j++) {
-                transposta[j][i] = matriz[i][j];
-            }
+            int temp = matriz[i][i];
+            matriz[i][i] = matriz[i][4 - i];
+            matriz[i][4 - i] = temp;
         }
-
-        return transposta;
     }
-} {
-    
 }
