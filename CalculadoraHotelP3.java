@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CalculadoraHotel {
+public class CalculadoraHotelP3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
